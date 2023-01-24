@@ -6,9 +6,11 @@
 }
 
 .sidebar{
+    position: absolute;
     background-color:grey;
-    width: 434px;
     font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
 }
 .sidebar nav{
     padding: 45px; 
@@ -95,6 +97,7 @@
     padding:0 34px ;
     padding-top: 144px;
     font-family: 'Fira Sans', sans-serif;
+    margin: 0 88px;
 }
 .contactform h1{
     font-family: 'Source Code Pro', monospace;
@@ -129,12 +132,18 @@ flex-direction: row;
   font-family: 'Fira Sans', sans-serif;
   margin: 20px;  
 }
+.blogContainer{
+    margin: 0 88px;
+}
 h1{
     font-family: 'Fira Sans', sans-serif;
     margin: 23px;
 }
 p{
     font-family: 'Source Code Pro', monospace;   
+}
+.intro{
+    margin: 0 88px;
 }
 .intro h2{
     font-family: 'Fira Sans', sans-serif;
@@ -172,22 +181,34 @@ p{
     width: 75px;
     background-color: yellow;
 }
+
+.sidebarGo{ 
+    transform: translate(-443px,0px);
+    position: absolute;
+}
 .hamburger{
     position: absolute;
     cursor: pointer;
     top: 10px;
     left: 10px;
 }
+.ham{
+    margin-top: 2px;
+    margin-left: 2px;
+}
 .cross{
-    margin-left: 184px;
+    margin-left: 144px;
+    margin-top: 2px;
 }
 
 @media(max-width: 1415px) {
     *{
-        background-color: red;
+        /* background-color: red; */
+    }.devPic{
+        display: none;
     }
-    .sidebar{
+    /* .sidebar{ 
         transform: translate(-443px,0px);
         position: absolute;
-    }
+    }*/
 }
